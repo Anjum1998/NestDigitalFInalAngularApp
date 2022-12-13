@@ -26,9 +26,9 @@ readValue=()=>
         console.log(response)
         if (response.status=="success") {
           this.searchUser=response; 
-          let empid=response.empid
-          console.log(empid)
-          localStorage.setItem("userInfo",empid)
+          let empId=response.empId
+          console.log(empId)
+          localStorage.setItem("userInfo",empId)
           this.router.navigate(['/searchemp'])
         }
         else{
