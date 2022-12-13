@@ -11,6 +11,7 @@ import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
 import { AddEmployComponent } from './add-employ/add-employ.component';
 import { ViewEmployComponent } from './view-employ/view-employ.component';
 import { SearchEmployComponent } from './search-employ/search-employ.component';
+import { EmployLoginComponent } from './employ-login/employ-login.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -27,6 +28,10 @@ const myRoute:Routes=[
   {
     path:"searchemp",
     component:SearchEmployComponent
+  },
+  {
+    path:"emplog",
+    component:EmployLoginComponent
   }
 ]
 @NgModule({
@@ -36,7 +41,8 @@ const myRoute:Routes=[
     NavbarAdminComponent,
     AddEmployComponent,
     ViewEmployComponent,
-    SearchEmployComponent
+    SearchEmployComponent,
+    EmployLoginComponent
   ],
   imports: [
     BrowserModule,

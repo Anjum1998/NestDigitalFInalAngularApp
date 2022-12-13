@@ -38,7 +38,7 @@ searchData:any=[]
         console.log(response)
         if (response.status=="success") {
           alert("employ deleted successfully")
-          this.router.navigate(['/search'])
+          this.router.navigate(['/searchemp'])
         } else {
           alert("can not delete")
         }
