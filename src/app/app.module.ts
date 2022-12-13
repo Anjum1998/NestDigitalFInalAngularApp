@@ -13,6 +13,9 @@ import { ViewEmployComponent } from './view-employ/view-employ.component';
 import { SearchEmployComponent } from './search-employ/search-employ.component';
 import { EmployLoginComponent } from './employ-login/employ-login.component';
 import { EmployViewProfileComponent } from './employ-view-profile/employ-view-profile.component';
+import { AddSecurityComponent } from './add-security/add-security.component';
+import { NavbarEmpComponent } from './navbar-emp/navbar-emp.component';
+import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -37,6 +40,14 @@ const myRoute:Routes=[
   {
     path:"empviewprof",
     component:EmployViewProfileComponent
+  },
+  {
+    path:"addsecurity",
+    component:AddSecurityComponent
+  },
+  {
+    path:"leave",
+    component:ApplyLeaveComponent
   }
 ]
 @NgModule({
@@ -48,7 +59,10 @@ const myRoute:Routes=[
     ViewEmployComponent,
     SearchEmployComponent,
     EmployLoginComponent,
-    EmployViewProfileComponent
+    EmployViewProfileComponent,
+    AddSecurityComponent,
+    NavbarEmpComponent,
+    ApplyLeaveComponent
   ],
   imports: [
     BrowserModule,
