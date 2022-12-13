@@ -12,6 +12,7 @@ import { AddEmployComponent } from './add-employ/add-employ.component';
 import { ViewEmployComponent } from './view-employ/view-employ.component';
 import { SearchEmployComponent } from './search-employ/search-employ.component';
 import { EmployLoginComponent } from './employ-login/employ-login.component';
+import { EmployViewProfileComponent } from './employ-view-profile/employ-view-profile.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -32,6 +33,10 @@ const myRoute:Routes=[
   {
     path:"emplog",
     component:EmployLoginComponent
+  },
+  {
+    path:"empviewprof",
+    component:EmployViewProfileComponent
   }
 ]
 @NgModule({
@@ -42,7 +47,8 @@ const myRoute:Routes=[
     AddEmployComponent,
     ViewEmployComponent,
     SearchEmployComponent,
-    EmployLoginComponent
+    EmployLoginComponent,
+    EmployViewProfileComponent
   ],
   imports: [
     BrowserModule,
