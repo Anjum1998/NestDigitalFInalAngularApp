@@ -12,6 +12,15 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/addemp",data)
   }
+
+  addLeave=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/leaveapply",data)
+  }
+  addSecurity=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/addsecurity",data)
+  }
   vieWEmploy=()=>
   {
     return this.http.get("http://localhost:8080/viewemp")
