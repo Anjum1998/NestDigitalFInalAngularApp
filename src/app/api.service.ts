@@ -44,5 +44,13 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/empprofile",data)
   }
+  securityLogin=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/securitylogin",data)
+  }
+  addEmpLog=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/logemp",data)
+  }
 
 }
