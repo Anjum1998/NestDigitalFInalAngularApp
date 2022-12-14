@@ -19,6 +19,11 @@ import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
 import { SecurityLoginComponent } from './security-login/security-login.component';
 import { EmployLogComponent } from './employ-log/employ-log.component';
 import { SecurityNavbarComponent } from './security-navbar/security-navbar.component';
+import { VisitorLogComponent } from './visitor-log/visitor-log.component';
+import { ViewEmplogComponent } from './view-emplog/view-emplog.component';
+import { DailyEmpLogComponent } from './daily-emp-log/daily-emp-log.component';
+import { ViewVisitorlogComponent } from './view-visitorlog/view-visitorlog.component';
+import { DailyVisitorlogComponent } from './daily-visitorlog/daily-visitorlog.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -59,6 +64,26 @@ const myRoute:Routes=[
   {
     path:"emplog",
     component:EmployLogComponent
+  },
+  {
+    path:"visitorlog",
+    component:VisitorLogComponent
+  },
+  {
+    path:"viewemplog",
+    component:ViewEmplogComponent
+  },
+  {
+    path:"dailyemplog",
+    component:DailyEmpLogComponent
+  },
+  {
+    path:"viewvisitorlog",
+    component:ViewVisitorlogComponent
+  },
+  {
+    path:"dailyvisitorlog",
+    component:DailyVisitorlogComponent
   }
 ]
 @NgModule({
@@ -76,7 +101,12 @@ const myRoute:Routes=[
     ApplyLeaveComponent,
     SecurityLoginComponent,
     EmployLogComponent,
-    SecurityNavbarComponent
+    SecurityNavbarComponent,
+    VisitorLogComponent,
+    ViewEmplogComponent,
+    DailyEmpLogComponent,
+    ViewVisitorlogComponent,
+    DailyVisitorlogComponent
   ],
   imports: [
     BrowserModule,

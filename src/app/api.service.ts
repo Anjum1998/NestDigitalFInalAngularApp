@@ -52,5 +52,25 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/logemp",data)
   }
+  addVisitorLog=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/logvisitor",data)
+  }
+  vieWEmployLog=()=>
+  {
+    return this.http.get("http://localhost:8080/viewallemplog")
+  }
+  vieWDailyEmployLog=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/viewdailyemplog",data)
+  }
+  vieWVisitorLog=()=>
+  {
+    return this.http.get("http://localhost:8080/viewallvisitorlog")
+  }
+  vieWDailyVisitorLog=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/viewDailyVisitorlog",data)
+  }
 
 }
