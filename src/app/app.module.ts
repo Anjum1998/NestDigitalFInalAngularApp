@@ -18,6 +18,7 @@ import { NavbarEmpComponent } from './navbar-emp/navbar-emp.component';
 import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
 import { SecurityLoginComponent } from './security-login/security-login.component';
 import { EmployLogComponent } from './employ-log/employ-log.component';
+import { SecurityNavbarComponent } from './security-navbar/security-navbar.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -74,7 +75,8 @@ const myRoute:Routes=[
     NavbarEmpComponent,
     ApplyLeaveComponent,
     SecurityLoginComponent,
-    EmployLogComponent
+    EmployLogComponent,
+    SecurityNavbarComponent
   ],
   imports: [
     BrowserModule,
