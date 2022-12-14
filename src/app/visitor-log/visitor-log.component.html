@@ -1,0 +1,75 @@
+
+<app-security-navbar></app-security-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row g-3">
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                   
+                    <h2 class="text" style="text-align:center">Visitor Log </h2>
+
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label text">Name</label>
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label text">Purpose</label>
+                    <input name="purpose" [(ngModel)]="purpose" type="text" class="form-control">
+
+                </div>
+            
+                
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label text">Whom to meet </label>
+                    <input name="whomtomeet" [(ngModel)]="whomtomeet" type="text" class="form-control">
+
+                </div>
+               
+                  
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">Date</label>
+                    <input type="date" name="date" [(ngModel)]="date" id="" class="form-control">
+                   
+
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">Entry_datetime</label>
+                    <input type="datetime" name="entry_datetime" [(ngModel)]="entry_datetime" id="" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">exit_datetime</label>
+                    <input type="datetime" name="exit_datetime" [(ngModel)]="exit_datetime" id="" class="form-control">
+
+
+                </div>
+                
+
+                
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+
+                    <button (click)="readValue()" class="btn btn-info">Login</button>
+
+                </div>
+            </div>
+                
+
+            
+        </div>
+
+     </div>
+</div>
+
+
+
+
