@@ -1,0 +1,39 @@
+<app-navbar-admin></app-navbar-admin>
+
+<div class="container">
+    <div class="row g-3 m-4">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+          <table class="table table-bordered border-dark">
+            <thead>
+              <tr>
+                <th scope="col">EmpCode</th>
+                <th scope="col">EmpName</th>
+                <th scope="col">Leave Type</th>
+                <th scope="col">Remarks</th>
+                <th scope="col">From-Date</th>
+                <th scope="col">To-Date</th>
+                <th scope="col">Apply-Date</th>
+               
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of data">
+                <td>{{i.empcode}}</td>
+                <td>{{i.empname}}</td>
+                <td>{{i.leavetype}}</td>
+                <td>{{i.remarks}}</td>
+                <td>{{i.from_date}}</td>
+                <td>{{i.to_date}}</td>
+                <td>{{i.apply_date}}</td>
+               
+              </tr>
+            </tbody>
+          </table>
+            
+
+        </div>
+    </div>
+</div>
+
+
