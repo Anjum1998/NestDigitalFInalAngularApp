@@ -1,43 +1,58 @@
 
-
+<app-home-navbar></app-home-navbar>
 <div class="container">
-    <div class="row">
+    <div class="row ">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-            <div class="row g-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                   
+                    
                     <h2 class="text" style="text-align:center">SECURITY LOGIN </h2>
 
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-
-                    <label for="" class="form-label text">User Name</label>
-                    <input name="username" [(ngModel)]="username" type="text" class="form-control">
-
-                </div>
-               
-                  
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-
-                    <label for="" class="form-label">Password</label>
-                    <input name="password" [(ngModel)]="password" type="password" name="" id="" class="form-control">
-
-                </div>
+                <div class="row g-3 m-4">
                 
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                    <button (click)="readValue()" class="btn btn-info">Login</button>
+                    
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                </div>
+                        <label for="" class="form-label text">User Name</label>
+                        <input name="username" [(ngModel)]="username" type="text" class="form-control">
+
+                    </div>
                 
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                    <a routerLink="/">Back to admin login</a>
+                        <label for="" class="form-label">Password</label>
+                        <input name="password" [(ngModel)]="password" type="password" name="" id="" class="form-control">
 
+                    </div>
+                    
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+
+                        <button (click)="readValue()" class="btn btn-info">Login</button>
+
+                    </div>
+                    
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+
+                        <a routerLink="/admin">Back to admin login</a>
+
+                    </div>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
+                
+                    
+                    <div class="card">
+                        <img height="250px" src="https://media.istockphoto.com/id/1403845756/vector/3d-account-security-concept-vector-online-data-privacy-protection-password-window-user-avatar.jpg?b=1&s=170667a&w=0&k=20&c=4ButqHXLWH3-P-wHf3cX50gII6xgku4a_hsscuxcCeg=" class="card-img-top" alt="...">
+                        
+                    </div>       
+                     
+                 </div>
                 </div>
 
-            </div>
+          
+            
 
         </div>
     </div>
