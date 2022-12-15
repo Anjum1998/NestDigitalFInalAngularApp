@@ -29,6 +29,7 @@ import { ViewSecurityComponent } from './view-security/view-security.component';
 import { ViewAllLeaveComponent } from './view-all-leave/view-all-leave.component';
 import { HomeComponent } from './home/home.component';
 import { HomeNavbarComponent } from './home-navbar/home-navbar.component';
+import { LogNavbarComponent } from './log-navbar/log-navbar.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -132,7 +133,8 @@ const myRoute:Routes=[
     ViewSecurityComponent,
     ViewAllLeaveComponent,
     HomeComponent,
-    HomeNavbarComponent
+    HomeNavbarComponent,
+    LogNavbarComponent
   ],
   imports: [
     BrowserModule,
