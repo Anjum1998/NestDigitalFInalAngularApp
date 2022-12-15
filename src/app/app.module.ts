@@ -27,9 +27,15 @@ import { DailyVisitorlogComponent } from './daily-visitorlog/daily-visitorlog.co
 import { SecurityProfileComponent } from './security-profile/security-profile.component';
 import { ViewSecurityComponent } from './view-security/view-security.component';
 import { ViewAllLeaveComponent } from './view-all-leave/view-all-leave.component';
+import { HomeComponent } from './home/home.component';
+import { HomeNavbarComponent } from './home-navbar/home-navbar.component';
 const myRoute:Routes=[
   {
     path:"",
+    component:HomeComponent
+  },
+  {
+    path:"admin",
     component:AdminLoginComponent
   },
   {
@@ -124,7 +130,9 @@ const myRoute:Routes=[
     DailyVisitorlogComponent,
     SecurityProfileComponent,
     ViewSecurityComponent,
-    ViewAllLeaveComponent
+    ViewAllLeaveComponent,
+    HomeComponent,
+    HomeNavbarComponent
   ],
   imports: [
     BrowserModule,
