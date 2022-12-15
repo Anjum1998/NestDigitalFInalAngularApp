@@ -29,7 +29,7 @@ readValue=()=>
           let securityId=response.securityId
           console.log(securityId)
           localStorage.setItem("userInfos",securityId)
-          this.router.navigate(['/emplog'])
+          this.router.navigate(['/securityprofile'])
         }
         else{
           alert(response.message)
