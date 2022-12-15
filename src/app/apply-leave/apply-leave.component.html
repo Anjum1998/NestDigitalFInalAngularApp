@@ -13,7 +13,13 @@
                 <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">leavetype</label>
-                    <input name="leavetype" [(ngModel)]="leavetype" type="text" class="form-control">
+                    <select name="leavetype" [(ngModel)]="leavetype" id="" class="form-control">
+                        <option value="">Select</option>
+                        <option value="casual">Casual Leave</option>
+                        <option value="sick">Sick Leave</option>
+                        <option value="other">Other Leave</option>
+                    </select>
+                   
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -39,7 +45,7 @@
                 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
 
-                    <button (click)="readValue()" class="btn btn-success">Submit</button>
+                    <button (click)="readValue()" class="btn btn-success">Apply</button>
 
                 </div>
             </div>
