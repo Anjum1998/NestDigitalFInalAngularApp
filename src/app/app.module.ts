@@ -24,6 +24,7 @@ import { ViewEmplogComponent } from './view-emplog/view-emplog.component';
 import { DailyEmpLogComponent } from './daily-emp-log/daily-emp-log.component';
 import { ViewVisitorlogComponent } from './view-visitorlog/view-visitorlog.component';
 import { DailyVisitorlogComponent } from './daily-visitorlog/daily-visitorlog.component';
+import { SecurityProfileComponent } from './security-profile/security-profile.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -84,6 +85,10 @@ const myRoute:Routes=[
   {
     path:"dailyvisitorlog",
     component:DailyVisitorlogComponent
+  },
+  {
+    path:"securityprofile",
+    component:SecurityProfileComponent
   }
 ]
 @NgModule({
@@ -106,7 +111,8 @@ const myRoute:Routes=[
     ViewEmplogComponent,
     DailyEmpLogComponent,
     ViewVisitorlogComponent,
-    DailyVisitorlogComponent
+    DailyVisitorlogComponent,
+    SecurityProfileComponent
   ],
   imports: [
     BrowserModule,

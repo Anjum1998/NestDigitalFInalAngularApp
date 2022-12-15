@@ -1,3 +1,4 @@
+<app-navbar-emp></app-navbar-emp>
 <div class="container">
     <div class="row g-3 m-4">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -5,12 +6,14 @@
             <div class="card" >
                 
                 <div class="card-body">
-                  <h5 class="card-title">Name :{{data[0].name}}</h5>
-                  <p class="card-text">Designation: {{data[0].designation}}</p>
+                  <h5 class="card-title text-center">WELCOME {{data[0].empname}}</h5>
+                  <img height="250px" src="https://media.istockphoto.com/id/1305665241/vector/anonymous-gender-neutral-face-avatar-incognito-head-silhouette-stock-illustration.jpg?s=612x612&w=0&k=20&c=qA6GUTalFyrBCRVUzQgp2B5zODxmOA4NXTBcw9notYY=" class="card-img-top " alt="..." >
+                  <h5 class="card-title text-center">Name :{{data[0].empname}}</h5>
+                  <p class="card-text text-center">Designation: {{data[0].designation}}</p>
                 </div>
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Salary{{data[0].salary}}</li>
-                  <li class="list-group-item">Username:{{data[0].username}}</li>
+                  <li class="list-group-item text-center">Salary:{{data[0].salary}}</li>
+                  <li class="list-group-item text-center">Username:{{data[0].username}}</li>
                 
                 </ul>
                 

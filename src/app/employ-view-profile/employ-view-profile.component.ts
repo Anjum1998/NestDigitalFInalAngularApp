@@ -7,13 +7,13 @@ import { ApiService } from '../api.service';
   styleUrls: ['./employ-view-profile.component.css']
 })
 export class EmployViewProfileComponent {
-  empId=""
+  empId:any=""
   data:any=[]
 constructor(private api:ApiService){
 
-  //this.empId=localStorage.getItem("userInfo")
+  this.empId=localStorage.getItem("userInfo")
     let data:any={
-      "empid":this.empId
+      "id":this.empId
     }
     this.api.empViewProf(data).subscribe(
       (response:any)=>

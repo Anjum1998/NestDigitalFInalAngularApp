@@ -73,4 +73,9 @@ export class ApiService {
     return this.http.post("http://localhost:8080/viewDailyVisitorlog",data)
   }
 
+  securityViewProf=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/securityprofile",data)
+  }
+
 }
