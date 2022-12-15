@@ -77,5 +77,13 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/securityprofile",data)
   }
+  vieWSecurity=()=>
+  {
+    return this.http.get("http://localhost:8080/viewsecurity")
+  }
+  vieWAllLeave=()=>
+  {
+    return this.http.get("http://localhost:8080/viewallleavebyemp")
+  }
 
 }

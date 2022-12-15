@@ -1,0 +1,36 @@
+<app-navbar-admin></app-navbar-admin>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="container">
+            <div class="row g-3 m-4">
+             
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3" *ngFor="let i of data">
+                    
+                    <div  class="card"style="height: 20rem;" >
+                        <img height="180px" src="https://previews.123rf.com/images/puruan/puruan1702/puruan170204248/72041528-police-avatar-icon-in-flat-color-style-people-service-security-guard-protect-crime.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Empcode :{{i.empcode}} </h5>
+                        <p class="card-text">Name :{{i.name}}</p>
+                        <p class="card-text">Username : {{i.username}}</p>
+                       
+                        
+                        </div>
+                    </div>
+
+                </div>
+                
+           
+
+                
+            </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
