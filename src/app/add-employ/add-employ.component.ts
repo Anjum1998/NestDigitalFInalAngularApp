@@ -26,6 +26,12 @@ constructor(private api:ApiService){}
         console.log(response)
         if (response.status=="success") {
           alert("employ added successfully")
+          this.designation=""
+          this.empcode=""
+          this.empname=""
+          this.password=""
+          this.salary=""
+          this.username=""
         } else {
           alert("something wrong")
         }

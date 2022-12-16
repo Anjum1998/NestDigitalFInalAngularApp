@@ -26,6 +26,11 @@ export class ApplyLeaveComponent {
         console.log(response)
         if (response.status=="success") {
           alert("leave added successfully")
+          this.empid=""
+          this.from_date=""
+          this.leavetype=""
+          this.remarks=""
+          this.to_date=""
         } else {
           alert("something wrong")
         }

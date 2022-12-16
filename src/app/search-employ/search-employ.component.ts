@@ -22,6 +22,7 @@ searchData:any=[]
         console.log(response)
         if (response.length==0) {
           alert("Invalid emp code")
+
         } else {
           this.searchData=response;
         }
@@ -38,7 +39,7 @@ searchData:any=[]
         console.log(response)
         if (response.status=="success") {
           alert("employ deleted successfully")
-          this.router.navigate(['/searchemp'])
+           window.location.reload()
         } else {
           alert("can not delete")
         }
