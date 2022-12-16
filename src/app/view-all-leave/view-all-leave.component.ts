@@ -35,6 +35,7 @@ export class ViewAllLeaveComponent {
           console.log(response.status)
 
           alert("success")
+          window.location.reload()
         } else {
 
           alert("failed")
@@ -63,6 +64,7 @@ export class ViewAllLeaveComponent {
           console.log(response.status)
 
           alert("success")
+          window.location.reload()
         } else {
 
           alert("failed")

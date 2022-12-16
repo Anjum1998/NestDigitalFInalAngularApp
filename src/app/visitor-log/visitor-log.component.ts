@@ -25,6 +25,12 @@ constructor(private api:ApiService){}
         console.log(response)
         if (response.status=="success") {
           alert("log success")
+          this.date=""
+          this.entry_datetime=""
+          this.exit_datetime=""
+          this.name=""
+          this.purpose=""
+          this.whomtomeet=""
         } else {
           alert("not allowed")
         }

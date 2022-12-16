@@ -22,6 +22,10 @@ constructor(private api:ApiService){}
         console.log(response)
         if (response.status=="success") {
           alert("successfully added")
+          this.date=""
+          this.empid=""
+          this.entry_datetime=""
+          this.exit_datetime=""
         } else {
           alert("wrong data")
         }

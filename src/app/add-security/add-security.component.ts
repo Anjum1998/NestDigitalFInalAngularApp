@@ -22,6 +22,10 @@ readValue=()=>
       console.log(response)
       if (response.status=="success") {
         alert("security added successfully")
+        this.empcode=""
+        this.name=""
+        this.password=""
+        this.username=""
       } else {
         alert("something wrong")
       }
