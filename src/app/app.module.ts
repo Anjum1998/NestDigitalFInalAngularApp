@@ -30,6 +30,7 @@ import { ViewAllLeaveComponent } from './view-all-leave/view-all-leave.component
 import { HomeComponent } from './home/home.component';
 import { HomeNavbarComponent } from './home-navbar/home-navbar.component';
 import { LogNavbarComponent } from './log-navbar/log-navbar.component';
+import { LeaveStatusComponent } from './leave-status/leave-status.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -106,6 +107,10 @@ const myRoute:Routes=[
   {
     path:"viewallleave",
     component:ViewAllLeaveComponent
+  },
+  {
+    path:"leavestatus",
+    component:LeaveStatusComponent
   }
 ]
 @NgModule({
@@ -134,7 +139,8 @@ const myRoute:Routes=[
     ViewAllLeaveComponent,
     HomeComponent,
     HomeNavbarComponent,
-    LogNavbarComponent
+    LogNavbarComponent,
+    LeaveStatusComponent
   ],
   imports: [
     BrowserModule,
