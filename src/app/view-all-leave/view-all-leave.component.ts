@@ -18,11 +18,13 @@ export class ViewAllLeaveComponent {
   data:any=[]
   statusvalue:any={}
 
-  readValue=(data:any)=>{
+  readValue=(data:any,id:any)=>{
 
     this.statusvalue=1;
 
-    let accept:any={"empid":data,"status":this.statusvalue}
+    let accept:any={"empid":data,"status":this.statusvalue,"id":id}
+    console.log(accept)
+    localStorage.setItem("statuss",this.statusvalue)
 
     this.api.updateStatus(accept).subscribe(
 
@@ -47,13 +49,14 @@ export class ViewAllLeaveComponent {
 
   }
   
-  rejectValue=(data:any)=>{
+  rejectValue=(data:any,id:any)=>{
 
     this.statusvalue=-1;
 
-    let accept:any={"empid":data,"status":this.statusvalue}
+    let reject:any={"empid":data,"status":this.statusvalue,"id":id}
+    localStorage.setItem("statuss",this.statusvalue)
 
-    this.api.updateStatus(accept).subscribe(
+    this.api.updateStatus(reject).subscribe(
 
       (response:any)=>{
 

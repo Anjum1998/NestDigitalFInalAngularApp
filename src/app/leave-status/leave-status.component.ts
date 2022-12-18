@@ -7,23 +7,45 @@ import { ApiService } from '../api.service';
   styleUrls: ['./leave-status.component.css']
 })
 export class LeaveStatusComponent {
-empid:any=""
-searchData:any=[]
+id:any=""
+statusvalue:any=[]
 constructor(private api:ApiService){
-  this.empid=localStorage.getItem("userInfo")
+  this.id=localStorage.getItem("uid")
 }
 
 readValue=()=>
 {
-  let data:any={"empid":this.empid}
+  let data:any={"id":this.id}
   console.log(data)
   this.api.searchStatus(data).subscribe(
     (response:any)=>
     {
-     this.searchData=response
+     this.statusvalue=response
       
     }
   )
 }
 data:any=[]
+searchValue:any=[]
+
+updateCounter=()=>
+{
+  let data:any={"id":this.id}
+  console.log(data)
+  this.api.updateCounter(data).subscribe(
+    (response:any)=>{
+      console.log(response)
+      if(response.length==0)
+      {
+        alert("invalid")
+      }
+      else{
+        this.searchValue=response;
+      }
+    }
+
+
+  )
+}
+
 }

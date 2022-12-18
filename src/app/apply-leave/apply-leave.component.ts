@@ -12,6 +12,7 @@ export class ApplyLeaveComponent {
   remarks=""
  from_date=""
   to_date=""
+  id:any={}
   constructor(private api:ApiService){
     this.empid=localStorage.getItem("userInfo")
   }
@@ -23,9 +24,11 @@ export class ApplyLeaveComponent {
     this.api.addLeave(data).subscribe(
       (response:any)=>
       {
-        console.log(response)
+        
         if (response.status=="success") {
           alert("leave added successfully")
+          localStorage.setItem("uid",response.id)
+          console.log(response.id)
           this.empid=""
           this.from_date=""
           this.leavetype=""
