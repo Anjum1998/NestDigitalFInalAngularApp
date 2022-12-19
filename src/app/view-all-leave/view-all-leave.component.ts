@@ -35,6 +35,12 @@ export class ViewAllLeaveComponent {
           console.log(response)
 
           console.log(response.status)
+          this.api.updateCounter(accept).subscribe(
+            (response:any)=>
+            {
+              console.log(response)
+            }
+          )
 
           alert("success")
           window.location.reload()
