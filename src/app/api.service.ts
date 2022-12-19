@@ -101,9 +101,9 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/updatecounter",data)
   }
-  vieWCount=()=>
+  vieWCount=(data:any)=>
   {
-    return this.http.get("http://localhost:8080/viewcount")
+    return this.http.post("http://localhost:8080/viewcount",data)
   }
 
 }

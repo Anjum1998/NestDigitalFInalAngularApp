@@ -31,6 +31,7 @@ import { HomeComponent } from './home/home.component';
 import { HomeNavbarComponent } from './home-navbar/home-navbar.component';
 import { LogNavbarComponent } from './log-navbar/log-navbar.component';
 import { LeaveStatusComponent } from './leave-status/leave-status.component';
+import { RemaingLeaveComponent } from './remaing-leave/remaing-leave.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -111,6 +112,10 @@ const myRoute:Routes=[
   {
     path:"leavestatus",
     component:LeaveStatusComponent
+  },
+  {
+    path:"remain",
+    component:RemaingLeaveComponent
   }
 ]
 @NgModule({
@@ -140,7 +145,8 @@ const myRoute:Routes=[
     HomeComponent,
     HomeNavbarComponent,
     LogNavbarComponent,
-    LeaveStatusComponent
+    LeaveStatusComponent,
+    RemaingLeaveComponent
   ],
   imports: [
     BrowserModule,

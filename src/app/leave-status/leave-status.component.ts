@@ -8,9 +8,13 @@ import { ApiService } from '../api.service';
 })
 export class LeaveStatusComponent {
 id:any=""
+empId:any=""
 statusvalue:any=[]
+
 constructor(private api:ApiService){
   this.id=localStorage.getItem("uid")
+  
+
 }
 
 readValue=()=>
@@ -26,26 +30,10 @@ readValue=()=>
   )
 }
 data:any=[]
-searchValue:any=[]
-
-updateCounter=()=>
-{
-  let data:any={"id":this.id}
-  console.log(data)
-  this.api.updateCounter(data).subscribe(
-    (response:any)=>{
-      console.log(response)
-      if(response.length==0)
-      {
-        alert("invalid")
-      }
-      else{
-        this.searchValue=response;
-      }
-    }
 
 
-  )
-}
+
+
+
 
 }
